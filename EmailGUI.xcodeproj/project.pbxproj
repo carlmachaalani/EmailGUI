@@ -15,6 +15,7 @@
 		7769902A29997AE4003B9B26 /* EmailGUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769902929997AE4003B9B26 /* EmailGUIUITests.swift */; };
 		7769902C29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769902B29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift */; };
 		7769903929997B18003B9B26 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903829997B18003B9B26 /* MockData.swift */; };
+		7769903B29998272003B9B26 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903A29998272003B9B26 /* EmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		7769902929997AE4003B9B26 /* EmailGUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGUIUITests.swift; sourceTree = "<group>"; };
 		7769902B29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7769903829997B18003B9B26 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		7769903A29998272003B9B26 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				7769900E29997AE2003B9B26 /* EmailGUIApp.swift */,
 				7769901029997AE2003B9B26 /* ContentView.swift */,
+				7769903A29998272003B9B26 /* EmailView.swift */,
 				7769903829997B18003B9B26 /* MockData.swift */,
 				7769901229997AE3003B9B26 /* Assets.xcassets */,
 				7769901429997AE3003B9B26 /* Preview Content */,
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7769901129997AE2003B9B26 /* ContentView.swift in Sources */,
+				7769903B29998272003B9B26 /* EmailView.swift in Sources */,
 				7769903929997B18003B9B26 /* MockData.swift in Sources */,
 				7769900F29997AE2003B9B26 /* EmailGUIApp.swift in Sources */,
 			);

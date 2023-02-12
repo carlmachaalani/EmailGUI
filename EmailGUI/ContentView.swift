@@ -8,16 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isOpen: Bool = true
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Open the thing").onTapGesture {
+                isOpen = !isOpen
+            }
+        }.sheet(isPresented: $isOpen) {
+            VStack {
+                EmailView(email: getMockEmails().first!)
+            }
         }
         .padding()
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
