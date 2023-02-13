@@ -10,3 +10,7 @@ Mails View:
 Email Details View:
 
 ![Screenshot 2023-02-12 at 9 46 54 PM](https://user-images.githubusercontent.com/67249396/218359168-b3b16c46-0011-4432-858e-032a4b77a241.png)
+
+Here's a small demo:
+https://user-images.githubusercontent.com/67249396/218359567-f38b3eb0-c74c-433d-85fe-5dc64224882f.mov
+
