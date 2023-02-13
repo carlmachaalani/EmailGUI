@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7769900F29997AE2003B9B26 /* EmailGUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769900E29997AE2003B9B26 /* EmailGUIApp.swift */; };
+		7769900F29997AE2003B9B26 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769900E29997AE2003B9B26 /* AppView.swift */; };
 		7769901129997AE2003B9B26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769901029997AE2003B9B26 /* ContentView.swift */; };
 		7769901329997AE3003B9B26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7769901229997AE3003B9B26 /* Assets.xcassets */; };
 		7769901629997AE3003B9B26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7769901529997AE3003B9B26 /* Preview Assets.xcassets */; };
@@ -15,7 +15,14 @@
 		7769902A29997AE4003B9B26 /* EmailGUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769902929997AE4003B9B26 /* EmailGUIUITests.swift */; };
 		7769902C29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769902B29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift */; };
 		7769903929997B18003B9B26 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903829997B18003B9B26 /* MockData.swift */; };
-		7769903B29998272003B9B26 /* EmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903A29998272003B9B26 /* EmailView.swift */; };
+		7769903B29998272003B9B26 /* EmailSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903A29998272003B9B26 /* EmailSheetView.swift */; };
+		7769903E2999B149003B9B26 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769903D2999B149003B9B26 /* EmailModel.swift */; };
+		776990412999B2C0003B9B26 /* EmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776990402999B2C0003B9B26 /* EmailViewModel.swift */; };
+		776990442999B554003B9B26 /* MailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776990432999B554003B9B26 /* MailsView.swift */; };
+		776990462999B6A0003B9B26 /* EmailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776990452999B6A0003B9B26 /* EmailListView.swift */; };
+		776990482999B823003B9B26 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776990472999B823003B9B26 /* ViewRouter.swift */; };
+		7769904C2999CC2C003B9B26 /* TabBarIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769904B2999CC2C003B9B26 /* TabBarIconView.swift */; };
+		7769904E2999D1F4003B9B26 /* EmailListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7769904D2999D1F4003B9B26 /* EmailListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		7769900B29997AE2003B9B26 /* EmailGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7769900E29997AE2003B9B26 /* EmailGUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGUIApp.swift; sourceTree = "<group>"; };
+		7769900E29997AE2003B9B26 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		7769901029997AE2003B9B26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7769901229997AE3003B9B26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7769901529997AE3003B9B26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,7 +54,14 @@
 		7769902929997AE4003B9B26 /* EmailGUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGUIUITests.swift; sourceTree = "<group>"; };
 		7769902B29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailGUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7769903829997B18003B9B26 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		7769903A29998272003B9B26 /* EmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailView.swift; sourceTree = "<group>"; };
+		7769903A29998272003B9B26 /* EmailSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailSheetView.swift; sourceTree = "<group>"; };
+		7769903D2999B149003B9B26 /* EmailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
+		776990402999B2C0003B9B26 /* EmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewModel.swift; sourceTree = "<group>"; };
+		776990432999B554003B9B26 /* MailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsView.swift; sourceTree = "<group>"; };
+		776990452999B6A0003B9B26 /* EmailListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailListView.swift; sourceTree = "<group>"; };
+		776990472999B823003B9B26 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		7769904B2999CC2C003B9B26 /* TabBarIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarIconView.swift; sourceTree = "<group>"; };
+		7769904D2999D1F4003B9B26 /* EmailListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +112,12 @@
 		7769900D29997AE2003B9B26 /* EmailGUI */ = {
 			isa = PBXGroup;
 			children = (
-				7769900E29997AE2003B9B26 /* EmailGUIApp.swift */,
+				776990472999B823003B9B26 /* ViewRouter.swift */,
+				7769900E29997AE2003B9B26 /* AppView.swift */,
+				776990422999B477003B9B26 /* Views */,
+				7769903F2999B21F003B9B26 /* ViewModels */,
 				7769901029997AE2003B9B26 /* ContentView.swift */,
-				7769903A29998272003B9B26 /* EmailView.swift */,
-				7769903829997B18003B9B26 /* MockData.swift */,
+				7769903C2999B101003B9B26 /* Models */,
 				7769901229997AE3003B9B26 /* Assets.xcassets */,
 				7769901429997AE3003B9B26 /* Preview Content */,
 			);
@@ -131,6 +147,35 @@
 				7769902B29997AE4003B9B26 /* EmailGUIUITestsLaunchTests.swift */,
 			);
 			path = EmailGUIUITests;
+			sourceTree = "<group>";
+		};
+		7769903C2999B101003B9B26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7769903829997B18003B9B26 /* MockData.swift */,
+				7769903D2999B149003B9B26 /* EmailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7769903F2999B21F003B9B26 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				776990402999B2C0003B9B26 /* EmailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		776990422999B477003B9B26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7769903A29998272003B9B26 /* EmailSheetView.swift */,
+				776990432999B554003B9B26 /* MailsView.swift */,
+				776990452999B6A0003B9B26 /* EmailListView.swift */,
+				7769904B2999CC2C003B9B26 /* TabBarIconView.swift */,
+				7769904D2999D1F4003B9B26 /* EmailListCellView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,10 +308,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				776990482999B823003B9B26 /* ViewRouter.swift in Sources */,
 				7769901129997AE2003B9B26 /* ContentView.swift in Sources */,
-				7769903B29998272003B9B26 /* EmailView.swift in Sources */,
+				776990412999B2C0003B9B26 /* EmailViewModel.swift in Sources */,
+				7769903E2999B149003B9B26 /* EmailModel.swift in Sources */,
+				776990442999B554003B9B26 /* MailsView.swift in Sources */,
+				7769904C2999CC2C003B9B26 /* TabBarIconView.swift in Sources */,
+				7769903B29998272003B9B26 /* EmailSheetView.swift in Sources */,
+				776990462999B6A0003B9B26 /* EmailListView.swift in Sources */,
 				7769903929997B18003B9B26 /* MockData.swift in Sources */,
-				7769900F29997AE2003B9B26 /* EmailGUIApp.swift in Sources */,
+				7769900F29997AE2003B9B26 /* AppView.swift in Sources */,
+				7769904E2999D1F4003B9B26 /* EmailListCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
