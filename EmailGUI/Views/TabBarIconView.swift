@@ -18,7 +18,7 @@ struct TabBarIconView: View {
 
     var body: some View {
         VStack {
-            Image(systemName: systemIconName)
+Image(systemName: "star.fill")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: width, height: height)
