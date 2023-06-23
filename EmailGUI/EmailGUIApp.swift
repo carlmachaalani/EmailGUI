@@ -45,7 +45,7 @@ struct ContentView: View {
                                 .foregroundColor(.blue)
                                 .frame(width: geometry.size.width/6, height: geometry.size.width/6)
                                 .shadow(color: Color("Shadow").opacity(0.4), radius: 15)
-                            Image(systemName: "pencil.line")
+Image(systemName: "questionmark.circle")
                                 .resizable()
                                 .bold()
                                 .aspectRatio(contentMode: .fit)
