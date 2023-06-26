@@ -90,7 +90,6 @@ var body: some View {
                 .padding(.horizontal).padding(.top).background(Color("TabBarBackground"))
 }
         }
-        .padding(.top, 70.0)
         .background(.white)
         .environmentObject(emailViewModel)
     }
