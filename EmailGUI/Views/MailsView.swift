@@ -21,7 +21,6 @@ var body: some View {
 {
                     .padding(.trailing, 8)
      .background(Color(.systemGray6))
-                .background(Color(.systemGray6))
             .cornerRadius(30)
             .padding(.leading, 10)
             .padding(.trailing, 10)
