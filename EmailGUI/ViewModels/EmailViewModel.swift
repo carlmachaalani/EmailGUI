@@ -23,6 +23,5 @@ func filterMails(searchTerm: String) {
             $0.sender.email.lowercased().contains(lowercasedSearchTerm)
         }
     }
-    }
 
 }
