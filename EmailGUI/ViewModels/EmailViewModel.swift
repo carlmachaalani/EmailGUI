@@ -14,11 +14,6 @@ class EmailViewModel: ObservableObject {
 
     @Published var filteredEmails: [Email] = []
     
-var emails: [Email] {
-    return emailModel.emails.filter { email in
-      return email.subject.contains(self.searchTerm) || email.sender.contains(self.searchTerm) || email.content.contains(self.searchTerm)
-    }
-}
 
 func filterMails(searchTerm: String) {
     self.searchTerm = searchTerm
