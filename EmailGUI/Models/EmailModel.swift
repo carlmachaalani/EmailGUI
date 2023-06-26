@@ -40,4 +40,5 @@ struct EmailModel {
        self.emails = emails
    }
 }
+}
 
