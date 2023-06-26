@@ -16,7 +16,8 @@ class EmailViewModel: ObservableObject {
     }
 
 func filterMails(searchTerm: String) {
-		emailModel.emails = emails.filter { $0.subject.contains(searchTerm) || $0.sender.name.contains(searchTerm) }
-	}
+   var filteredEmails = emails.filter { $0.subject.contains(searchTerm) || $0.sender.name.contains(searchTerm) }
+   emailModel.setEmails(filteredEmails)
+}
     }
 }
