@@ -35,5 +35,8 @@ struct EmailModel {
             }.resume()
     }
     
+   mutating func setEmails(_ emails: [Email]) {
+       self.emails = emails
+   }
 }
 
