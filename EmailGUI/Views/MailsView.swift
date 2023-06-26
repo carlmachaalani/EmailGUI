@@ -14,8 +14,6 @@ struct MailsView: View {
     
 @State var searchTerm: String = "Email, Name, etc..."
 private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
-@State var searchTerm: String = "Email, Name, etc..."
-private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
 
 var body: some View {
 
