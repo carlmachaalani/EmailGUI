@@ -42,7 +42,7 @@ struct MailsView: View {
                     .padding(.leading, 8)
                     .foregroundColor(.gray)
                 
-TextField("Email, Name, etc...", text: $searchTerm, onEditingChanged: { (changed) in if changed { handleSearchTermChanged() } })
+TextField("Email, Name, etc...", text: $searchTerm, onEditingChanged: { _ in handleSearchTermChanged() }).onTapGesture { searchTerm = "" }
                     .foregroundColor(.gray)
 
                 Image(systemName: "mic.fill")
