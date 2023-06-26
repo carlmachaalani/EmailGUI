@@ -31,7 +31,7 @@ struct EmailModel {
         guard let url = URL(string: "http:localhost:3000/emails") else { return }
 
             URLSession.shared.dataTask(with: url) {(data, response, error) in
-              guard let _ = data else { return }
+               guard let _ = email.message else { return }
             }.resume()
     }
     
