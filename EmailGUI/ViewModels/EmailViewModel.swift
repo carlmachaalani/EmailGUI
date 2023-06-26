@@ -19,5 +19,3 @@ func filterMails(searchTerm: String) {
     self.searchTerm = searchTerm
 }
 }
-    }
-}
