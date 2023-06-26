@@ -10,6 +10,7 @@ import Foundation
 class EmailViewModel: ObservableObject {
     
     @Published private var emailModel: EmailModel = EmailModel()
+@Published var searchTerm: String = ""
     
     var emails: [Email] {
         emailModel.emails
