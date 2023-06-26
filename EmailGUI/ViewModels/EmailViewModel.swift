@@ -16,14 +16,13 @@ class EmailViewModel: ObservableObject {
     
 
 func filterMails(searchTerm: String) {
-    self.searchTerm = searchTerm
-    objectWillChange.send()
-}
-
+        var lowercasedSearchTerm = searchTerm.lowercased()
+        self.filteredEmails = emailModel.mails.filter {
             $0.sender.name.lowercased().contains(lowercasedSearchTerm) ||
             $0.subject.lowercased().contains(lowercasedSearchTerm) ||
             $0.sender.email.lowercased().contains(lowercasedSearchTerm)
         }
+    }
     }
 
 }
