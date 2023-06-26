@@ -12,7 +12,7 @@ struct MailsView: View {
 
     @ObservedObject var emailViewModel = EmailViewModel()
     
-    private func handleSearchTermChanged() {
+private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
 			emailViewModel.filterMails(searchTerm: searchTerm)
 		}
      // search bar input term
