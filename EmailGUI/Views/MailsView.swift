@@ -18,7 +18,6 @@ private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
 var body: some View {
 
                     Image(systemName: "circle.fill")
-{
                     .padding(.trailing, 8)
      .background(Color(.systemGray6))
             .cornerRadius(30)
