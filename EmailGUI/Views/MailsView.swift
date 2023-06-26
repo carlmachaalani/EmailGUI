@@ -88,6 +88,7 @@ var body: some View {
             // Email List
             EmailListView()
                 .padding(.horizontal).padding(.top).background(Color("TabBarBackground"))
+.background(Color("TabBarBackground"))
 }
         }
         .background(.white)
