@@ -23,4 +23,14 @@ func filterMails(searchTerm: String) {
     objectWillChange.send()
 }
 
+
+    func filterMails(searchTerm: String) {
+        let lowercasedSearchTerm = searchTerm.lowercased()
+        filteredEmails = emails.filter {
+            $0.sender.name.lowercased().contains(lowercasedSearchTerm) ||
+            $0.subject.lowercased().contains(lowercasedSearchTerm) ||
+            $0.sender.email.lowercased().contains(lowercasedSearchTerm)
+        }
+    }
+
 }
