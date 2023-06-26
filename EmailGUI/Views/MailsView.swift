@@ -20,8 +20,8 @@ var body: some View {
                 Image(systemName: "mic.fill")
                     .padding(.trailing, 8)
                     .foregroundColor(.gray)
-            }
-            .background(Color(.systemGray6))
+             }
+                .background(Color(.systemGray6))
             .cornerRadius(30)
             .padding(.leading, 10)
             .padding(.trailing, 10)
