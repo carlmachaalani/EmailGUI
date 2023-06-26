@@ -42,7 +42,7 @@ private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
                     .padding(.leading, 8)
                     .foregroundColor(.gray)
                 
-TextField("Email, Name, etc...", text: $searchTerm).onChange(of: searchTerm, perform: handleSearchTermChanged).onTapGesture { searchTerm = "" }
+TextField("Email, Name, etc...", text: $searchTerm).onChange(of: searchTerm, perform: { self.filterMails() }).onTapGesture { searchTerm = "" }
                     .foregroundColor(.gray)
 
                 Image(systemName: "mic.fill")
