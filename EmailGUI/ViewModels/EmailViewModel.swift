@@ -22,3 +22,5 @@ func filterMails(searchTerm: String) {
     self.searchTerm = searchTerm
     objectWillChange.send()
 }
+
+}
