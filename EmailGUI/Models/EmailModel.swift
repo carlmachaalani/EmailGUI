@@ -33,7 +33,6 @@ struct EmailModel {
             URLSession.shared.dataTask(with: url) {(data, response, error) in
                guard let _ = email.message else { return }
             }
-            }.resume()
     }
     
    mutating func setEmails(_ emails: [Email]) {
