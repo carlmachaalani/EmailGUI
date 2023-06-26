@@ -11,6 +11,8 @@ class EmailViewModel: ObservableObject {
     
     @Published private var emailModel: EmailModel = EmailModel()
 @Published var searchTerm: String = ""
+
+    @Published var filteredEmails: [Email] = []
     
 var emails: [Email] {
     return emailModel.emails.filter { email in
