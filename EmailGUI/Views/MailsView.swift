@@ -14,36 +14,10 @@ struct MailsView: View {
     
 @State var searchTerm: String = "Email, Name, etc..."
 private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
-}
-     // search bar input term
- 
-    
-    var body: some View {
-        
-        VStack {
-            
-            // Welcome message
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Hey, Henri").fontWeight(.semibold)
-                    Text("You have a few messages").font(.largeTitle).fontWeight(.bold).padding(.trailing, 10.0)
-                }.padding(.horizontal)
-                Spacer()
-                Image("person1")
-                    .resizable()
-                    .frame(width: 70, height: 70)
-                    .clipShape(Circle())
-                    .padding(.trailing)
-            }
-            
-            // Search Bar
-            HStack {
-                Image(systemName: "magnifyingglass")
-                    .padding(.leading, 8)
-                    .foregroundColor(.gray)
-                
-TextField("Email, Name, etc...", text: $searchTerm).onChange(of: searchTerm, perform: emailViewModel.filterMails)
-                    .foregroundColor(.gray)
+@State var searchTerm: String = "Email, Name, etc..."
+private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
+
+var body: some View {
 
                 Image(systemName: "mic.fill")
                     .padding(.trailing, 8)
