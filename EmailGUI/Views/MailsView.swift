@@ -15,6 +15,7 @@ struct MailsView: View {
 @State var searchTerm: String = "Email, Name, etc..."
 private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
 
+filterMails()
 var body: some View {
 
                     Image(systemName: "circle.fill")
