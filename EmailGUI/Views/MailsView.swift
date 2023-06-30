@@ -12,7 +12,8 @@ struct MailsView: View {
 
     @ObservedObject var emailViewModel = EmailViewModel()
     
-@State var searchTerm: String = "Email, Name, etc..."
+@State var searchTerm: String = "" 
+SearchBar(text: $searchTerm) { searchTerm in filterMails() }
 private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
 
 filterMails()
