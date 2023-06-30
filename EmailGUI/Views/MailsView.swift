@@ -10,15 +10,16 @@ import SwiftUI
 // This is the view that shows when the user is on the "Mails" tab
 struct MailsView: View {
 
-    @ObservedObject var emailViewModel = EmailViewModel()
-    
-@State var searchTerm: String = "" 
-SearchBar(text: $searchTerm) { searchTerm in filterMails() }
-private func filterMails() { emailViewModel.filterMails(searchTerm: searchTerm)}
-
-filterMails()
 var body: some View {
 
+    private func filterMails() {
+        // Implementation goes here
+        emailViewModel.filterMails(searchTerm: searchTerm)
+    }
+
+    @State var searchTerm: String = ""
+    SearchBar(text: $searchTerm) { searchTerm in filterMails() }
+    filterMails()
                     Image(systemName: "circle.fill")
                     .padding(.trailing, 8)
      .background(Color(.systemGray6))
