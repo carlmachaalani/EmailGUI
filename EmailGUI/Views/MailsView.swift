@@ -12,12 +12,13 @@ struct MailsView: View {
 
 var body: some View {
 
-    private func filterMails() {
-        // Implementation goes here
-        emailViewModel.filterMails(searchTerm: searchTerm)
-    }
+@ObservedObject var emailViewModel: EmailViewModel
 
-    @State var searchTerm: String = ""
+private func filterMails() {
+    emailViewModel.filterMails(searchTerm: self.emailViewModel.searchTerm)
+}
+
+SearchBar(text: self.$emailViewModel.searchTerm)
     SearchBar(text: $searchTerm) { searchTerm in filterMails() }
     filterMails()
                     Image(systemName: "circle.fill")
